@@ -71,4 +71,10 @@
 // }
 
 // Coding Challenge 4
-const bill = 275;
+const bill = 430;
+const tipPercentage = bill >= 50 && bill <= 300 ? 0.15 : 0.2;
+const tipAmount = bill * tipPercentage;
+const totalAmount = bill + tipAmount;
+console.log(
+  `The bill was ${bill}, the tip is going to be ${tipAmount}, with the final bill being ${totalAmount}`
+);
